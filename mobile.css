@@ -1,0 +1,175 @@
+@media screen and (max-width: 1000px) {
+    header {
+        position: relative;
+        overflow: visible;
+    }
+
+    header .botones {
+        position: absolute;
+        top: 80%;
+        z-index: 100;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background: white;
+        padding: 20px 10px;
+        border-radius: 5px;
+    }
+
+    header .botones {
+        display: none;
+    }
+
+    header .botones ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header ul a {
+        width: 100%;
+        padding: 10px 0 10px 15px !important;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    .barra {
+        display: block;
+        padding-right: 15px;
+        padding-top: 5px;
+
+    }
+
+    header img {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .hero {
+        height: calc(100vh - 85px - 54px);
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        margin-bottom: 20vh;
+    }
+
+    .hero .text {
+        width: 90%;
+    }
+
+    .hero .imagen figure {
+        transform: none;
+    }
+
+    .hero .container p {
+        max-width: none;
+    }
+
+    .hero img {
+        margin-top: 20px;
+    }
+
+    .categories article {
+        min-width: 50%;
+        margin-top: 0;
+    }
+
+    .categories .content {
+        flex-wrap: wrap;
+        margin-top: 24px;
+    }
+
+    .slide {
+        min-width: 48.83333% !important;
+
+    }
+    .main-photos .col {
+        width: 100%;
+    }
+    .main-photos a {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .top{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    header .botones{
+        width: 75%;
+    }
+    header ul a {
+        text-align: center;
+        padding: 10px 0 10px 0 !important;
+    }
+    header .adicionales {
+        margin-top: 15px;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero .imagen  {
+        display: none;
+    }
+    .hero .container {
+        height: calc(100vh - 85px - 54px);
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .hero .text {
+        padding: 0;
+        text-align: center;
+    }
+    .categories article {
+        min-width: 100%;
+    }
+    .categories article .text {
+        padding: 25px;
+    }
+    .techniques .image {
+        display: none;
+    }
+    .techniques .info{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+    }
+    .slide {
+        min-width: 100% !important;
+    }
+    .events .title p {
+        max-width: 60vw;
+    }
+    .photos .description {
+        padding: 0 15px;
+    }
+    .categories img {
+        filter: sepia(100%);
+    }
+    footer .content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 15px;
+    }
+    footer p {
+        max-width: 100%;
+    }
+}

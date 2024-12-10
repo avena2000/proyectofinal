@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/705d8d055f.js"></script>
     <link href="styles.css" rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet"/>
@@ -19,6 +20,7 @@
     <title>WildCarp</title>
 </head>
 <body>
+<i class="up fa-solid fa-chevron-up animate__animated animate__fadeInUp" id="subir"></i>
 <div class="modal-back" id="modal" style="display: none">
     <div class="info-modal">
         <a href="#" id="closeModal">✖</a>
@@ -47,7 +49,7 @@
             </div>
 
         </form>
-        <img src="assets/images/logo.png" alt="logo">
+        <img alt="logo" src="assets/images/logo.png">
 
     </div>
 
@@ -77,18 +79,18 @@
         </div>
     </div>
 </section>
-<header>
+<header id="home">
     <div class="wave"></div>
     <div class="container middle">
         <a href="#"><img alt="logo" src="assets/images/logo.png"></a>
-        <div class="botones">
+        <div class="botones" id="menu">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Pages</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a class="btn" href="#home">Home</a></li>
+                <li><a class="btn" href="#pages">Pages</a></li>
+                <li><a class="btn" href="#gall">Gallery</a></li>
+                <li><a class="btn" href="#events">Events</a></li>
+                <li><a class="btn" href="#shop">Shop</a></li>
+                <li><a class="btn" href="#faq">FAQ</a></li>
             </ul>
             <div class="adicionales">
                 <a href="#">
@@ -102,26 +104,64 @@
                 </a>
             </div>
         </div>
+        <i class="barra fa-solid fa-bars" id="barras" style="cursor: pointer; font-size: 24px;"></i>
     </div>
 </header>
 <section class="hero">
     <div class="wave"></div>
-    <div class="container middle">
-        <div class="text">
-            <h1>Modern Design <span>Exotic</span> Fishinizerry</h1>
-            <p>Conveniently customize proactives into everaged interfaces without compellingly streamline
-                cooperative.</p>
-            <a href="#">Join us Now</a>
-        </div>
-        <div class="imagen">
-            <figure>
-                <img alt="hero" src="assets/images/hero.png">
-            </figure>
-        </div>
+    <div class="middle">
+        <ul class="rslides">
+            <li>
+                <div class="container">
+                    <div class="text">
+                        <h1>Modern Design <span>Exotic</span> Fishinizerry</h1>
+                        <p>Conveniently customize proactives into everaged interfaces without compellingly streamline
+                            cooperative.</p>
+                        <a href="#">Join us Now</a>
+                    </div>
+                    <div class="imagen">
+                        <figure>
+                            <img alt="hero" src="assets/images/hero.png">
+                        </figure>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                    <div class="text">
+                        <h1>Just for <span>You</span> Fishinizerry</h1>
+                        <p>Conveniently customize proactives into everaged interfaces without compellingly streamline
+                            cooperative.</p>
+                        <a href="#">Talk to us</a>
+                    </div>
+                    <div class="imagen">
+                        <figure>
+                            <img alt="hero" src="assets/images/hero2.png" style="max-width: 45vw">
+                        </figure>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="container">
+                    <div class="text">
+                        <h1>Buy <span>Everything</span> You'll Need</h1>
+                        <p>Conveniently customize proactives into everaged interfaces without compellingly streamline
+                            cooperative.</p>
+                        <a href="#">Join us Now</a>
+                    </div>
+                    <div class="imagen">
+                        <figure>
+                            <img alt="hero" src="assets/images/hero.png">
+                        </figure>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <p style="color: white">-</p>
     </div>
 </section>
 
-<section class="categories" style="padding: 110px 0">
+<section class="categories" id="pages" style="padding: 110px 0">
     <div class="content middle">
         <article>
             <figure>
@@ -203,8 +243,8 @@
     </div>
 </section>
 
-<section class="events">
-    <div class="wave invert"></div>
+<section class="events" id="events">
+    <div class="wave"></div>
     <div class="content middle">
         <div class="title">
             <div class="description">
@@ -213,8 +253,10 @@
                     pages.</p>
             </div>
             <div class="slide-buttons">
-                <a href="#" id="back-button"><i class="wow animate__animated animate__heartBeat fa-solid fa-arrow-left"></i></a>
-                <a href="#" id="forward-button"><i class="wow animate__animated animate__heartBeat fa-solid fa-arrow-right"></i></a>
+                <a href="#" id="back-button"><i
+                        class="wow animate__animated animate__heartBeat fa-solid fa-arrow-left"></i></a>
+                <a href="#" id="forward-button"><i
+                        class="wow animate__animated animate__heartBeat fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
 
@@ -362,7 +404,7 @@
     <div class="wave-b"></div>
 </section>
 
-<section class="photos">
+<section class="photos" id="gall">
     <div class="content">
         <div class="description">
             <h3>Wildcarp Fishing Hunt Gallery</h3>
@@ -370,43 +412,50 @@
         </div>
         <div class="main-photos">
             <div class="col">
-                <a href="assets/images/photo-gallery/1.jpg" data-fancybox="gallery" class="div1 wow animate__animated animate__headShake">
+                <a class="div1 wow animate__animated animate__headShake" data-fancybox="gallery"
+                   href="assets/images/photo-gallery/1.jpg">
                     <figure>
-                        <img src="assets/images/photo-gallery/1.jpg" alt="photo">
+                        <img alt="photo" src="assets/images/photo-gallery/1.jpg">
                     </figure>
                 </a>
             </div>
             <div class="col">
-                <a href="assets/images/photo-gallery/2.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                <a class="half wow animate__animated animate__headShake" data-fancybox="gallery"
+                   href="assets/images/photo-gallery/2.jpg">
                     <figure>
-                        <img src="assets/images/photo-gallery/2.jpg" alt="photo">
+                        <img alt="photo" src="assets/images/photo-gallery/2.jpg">
                     </figure>
                 </a>
-                <a href="assets/images/photo-gallery/3.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                <a class="half wow animate__animated animate__headShake" data-fancybox="gallery"
+                   href="assets/images/photo-gallery/3.jpg">
                     <figure>
-                        <img src="assets/images/photo-gallery/3.jpg" alt="photo">
+                        <img alt="photo" src="assets/images/photo-gallery/3.jpg">
                     </figure>
                 </a>
-                <a href="assets/images/photo-gallery/4.jpg" data-fancybox="gallery" class="full wow animate__animated animate__headShake">
+                <a class="full wow animate__animated animate__headShake" data-fancybox="gallery"
+                   href="assets/images/photo-gallery/4.jpg">
                     <figure>
-                        <img src="assets/images/photo-gallery/4.jpg" alt="photo">
+                        <img alt="photo" src="assets/images/photo-gallery/4.jpg">
                     </figure>
                 </a>
             </div>
             <div class="col">
-                <a href="assets/images/photo-gallery/5.jpg" data-fancybox="gallery" class="full wow animate__animated animate__headShake">
+                <a class="full wow animate__animated animate__headShake" data-fancybox="gallery"
+                   href="assets/images/photo-gallery/5.jpg">
                     <figure>
-                        <img src="assets/images/photo-gallery/5.jpg" alt="photo">
+                        <img alt="photo" src="assets/images/photo-gallery/5.jpg">
                     </figure>
                 </a>
-                <a href="assets/images/photo-gallery/6.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                <a class="half wow animate__animated animate__headShake" data-fancybox="gallery"
+                   href="assets/images/photo-gallery/6.jpg">
                     <figure>
-                        <img src="assets/images/photo-gallery/6.jpg" alt="photo">
+                        <img alt="photo" src="assets/images/photo-gallery/6.jpg">
                     </figure>
                 </a>
-                <a href="assets/images/photo-gallery/7.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                <a class="half wow animate__animated animate__headShake" data-fancybox="gallery"
+                   href="assets/images/photo-gallery/7.jpg">
                     <figure>
-                        <img src="assets/images/photo-gallery/7.jpg" alt="photo">
+                        <img alt="photo" src="assets/images/photo-gallery/7.jpg">
                     </figure>
                 </a>
             </div>
@@ -415,7 +464,15 @@
     </div>
 </section>
 
-<section class="pricing">
+<div class="parallax">
+    <div class="wave"></div>
+    <div class="wave invert"></div>
+
+</div>
+
+
+<section class="pricing" id="shop">
+    <div class="wave"></div>
     <div class="content middle">
         <div class="description">
             <h3>Wildcarp Pricing Plan</h3>
@@ -437,7 +494,7 @@
                     <p>Free Theme Installation</p>
                     <p>Free 24/7 Support</p>
                 </div>
-                <a href="#" class="boton">PURCHASE NOW</a>
+                <a class="boton" href="#">PURCHASE NOW</a>
             </article>
 
             <article class="price wow animate__animated animate__headShake">
@@ -455,7 +512,7 @@
                     <p>Free 24/7 Support</p>
                     <p>Free Custom Services</p>
                 </div>
-                <a href="#" class="boton">PURCHASE NOW</a>
+                <a class="boton" href="#">PURCHASE NOW</a>
             </article>
 
             <article class="price">
@@ -472,18 +529,150 @@
                     <p>Free Theme Installation</p>
                     <p>Free 24/7 Support</p>
                 </div>
-                <a href="#" class="boton">PURCHASE NOW</a>
+                <a class="boton" href="#">PURCHASE NOW</a>
             </article>
         </div>
         <div class="additional">
-            <a href="#" id="ver-mas" class="wow animate__animated animate__fadeInLeft modal-boton">Contact Us Now</a>
+            <a class="wow animate__animated animate__fadeInLeft modal-boton" href="#" id="ver-mas">Contact Us Now</a>
         </div>
     </div>
 </section>
 
+<section class="faq" id="faq">
+    <div class="wave"></div>
+    <div class="content middle">
+        <div class="description">
+            <h3>Frequently Asked Questions</h3>
+            <p>Conveniently customize proactive services leveraged interfaces without Globally</p>
+        </div>
+
+        <div class="acordeon ">
+            <div class="border">
+                <div class="acordeon-disparador">
+                    <h4>Where to buy?</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <div class="informacion">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam laborum, obcaecati! Alias
+                    asperiores,
+                    culpa
+                    cum
+                    distinctio dolor dolorum eum hic iusto magni nulla pariatur possimus quibusdam sapiente sed sint
+                    temporibus
+                    totam
+                    voluptate voluptatem voluptatibus voluptatum! Culpa minus officia pariatur perspiciatis? Alias
+                    debitis
+                    eum
+                    fugiat
+                    illo, iusto pariatur quibusdam sapiente voluptates! Consectetur dolorum eum itaque porro reiciendis?
+                    At
+                    consequuntur
+                    cumque dolores eos esse eum, non odio quisquam quos recusandae repellat sapiente. Accusantium amet
+                    aperiam
+                    asperiores aspernatur commodi dicta expedita facere id laboriosam necessitatibus nemo optio
+                    perferendis
+                    qui,
+                    quibusdam quod quos rem saepe sit vel voluptas. Accusamus adipisci aliquid autem beatae commodi
+                    corporis
+                    dignissimos
+                    dolore eaque eos esse fugiat ipsa ipsam libero natus neque nesciunt non nostrum quibusdam quis,
+                    reiciendis
+                    sunt
+                    tempora temporibus vel veniam vero! Animi atque beatae consequuntur debitis doloribus error et harum
+                    incidunt
+                    ipsam,
+                    molestias nam odit officiis praesentium quasi, qui ratione repellat repellendus sint soluta veniam
+                    voluptas,
+                    voluptate.
+                </div>
+            </div>
+            <div class="border">
+                <div class="acordeon-disparador">
+                    <h4>How much can i buy?</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <div class="informacion">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda beatae, consectetur nam neque
+                    repudiandae sapiente suscipit veritatis. Adipisci animi assumenda autem consectetur corporis,
+                    deserunt
+                    dolorum eius error est eum facilis hic illo impedit in ipsum, iure maxime minima natus nemo omnis
+                    reiciendis
+                    reprehenderit sapiente sint suscipit voluptates. Corporis, doloremque!
+                </div>
+            </div>
+            <div class="border">
+                <div class="acordeon-disparador">
+                    <h4>Where to find?</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+
+                <div class="informacion">
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, at!</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae dicta fugit
+                            laborum
+                            molestiae tempora. Architecto aut consectetur distinctio, eligendi eveniet excepturi facilis
+                            harum,
+                            itaque iusto laboriosam minima necessitatibus nulla odio officiis porro quidem sed unde
+                            velit,
+                            veniam vero voluptates.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <h3>Checkout our new ad</h3>
+        <div class="video-container">
+            <video controls>
+                <source src="assets/video/video.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="content middle">
+        <div class="text">
+            <img alt="logo" src="assets/images/logo-blank.png">
+            <p>Conveniently customizec web services aggregate frictionle internet withouevs Conveniently customizec.
+                aggregate frictionle without aggregate Conveniently customizec efrictionle.</p>
+        </div>
+        <div class="keep">
+            <h4>Keep In Touch</h4>
+            <div class="info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>yourmail@gmail.com</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-phone"></i>
+                <p>+88130-589-745-6987</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-stopwatch"></i>
+                <p>Mon - Fri 09:00 - 18:00</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="carrousel.js"></script>
 <script>
-    // Cerrar el modal al hacer clic fuera del contenido
+    $(document).ready(function () {
+        $("#subir").click(function () {
+            $("body, html").animate(
+                {
+                    scrollTop: "0px",
+                },
+                1000
+            );
+        });
+    });
     $(window).click(function (event) {
         if ($(event.target).is('#modal')) {
             $('#modal').fadeOut();
@@ -495,26 +684,49 @@
             $('#modal').fadeOut();
         }
     })
+
     $(".rslides").responsiveSlides({
         auto: true,
         pager: false,
         nav: true,
-        speed: 500,
+        speed: 1500,
         namespace: "callbacks",
     });
+
     $('#closeModal').click(function () {
         $('#modal').fadeOut();
     });
+
     $('#ver-mas').click(function () {
         $('#modal').fadeIn();
     });
+
     document.querySelectorAll('a[href="#"]').forEach(function (link) {
         link.addEventListener('click', function (event) {
             event.preventDefault();
         });
     });
+
     new WOW().init();
+
+    $("#barras").click(function () {
+        $("#menu").slideToggle()
+    })
+
+    $(".btn").click(function () {
+        if ($(window).width() <= 1000) { // Solo ejecuta si el ancho es 1000px o menos
+            $("#menu").slideToggle();
+        }
+    });
+
     Fancybox.bind("[data-fancybox]", {});
+
+    $(".acordeon-disparador").click(function () {
+        $(this).next().slideToggle();
+        $(this).find("h4").toggleClass("color");
+        $(this).find("i").toggleClass("flip");
+    });
+
 </script>
 
 </body>

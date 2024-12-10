@@ -236,11 +236,13 @@ header .adicionales {
 .categories article {
     transition: 300ms all;
     margin-top: 24px;
+    z-index: 0;
 }
 
 .categories article:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
     transform: translateY(-5px); /* Eleva un poco el elemento */
+    z-index: 100;
 }
 
 .categories article .text {
@@ -269,6 +271,7 @@ h2 {
 }
 
 .hero .wave {
+    animation: wave-continuos 2s infinite linear;
     position: absolute;
     clip-path: polygon(100% 0%, 0% 0%, 0.00% 66.67%, 1.00% 66.14%, 2.00% 64.61%, 3.00% 62.15%, 4.00% 58.93%, 5.00% 55.15%, 6.00% 51.05%, 7.00% 46.88%, 8.00% 42.90%, 9.00% 39.38%, 10.00% 36.52%, 11.00% 34.50%, 12.00% 33.46%, 13.00% 33.46%, 14.00% 34.50%, 15.00% 36.52%, 16.00% 39.38%, 17.00% 42.90%, 18.00% 46.88%, 19.00% 51.05%, 20.00% 55.15%, 21.00% 58.93%, 22.00% 62.15%, 23.00% 64.61%, 24.00% 66.14%, 25.00% 66.67%, 26.00% 66.14%, 27.00% 64.61%, 28.00% 62.15%, 29.00% 58.93%, 30.00% 55.15%, 31.00% 51.05%, 32.00% 46.88%, 33.00% 42.90%, 34.00% 39.38%, 35.00% 36.52%, 36.00% 34.50%, 37.00% 33.46%, 38.00% 33.46%, 39.00% 34.50%, 40.00% 36.52%, 41.00% 39.38%, 42.00% 42.90%, 43.00% 46.88%, 44.00% 51.05%, 45.00% 55.15%, 46.00% 58.93%, 47.00% 62.15%, 48.00% 64.61%, 49.00% 66.14%, 50.00% 66.67%, 51.00% 66.14%, 52.00% 64.61%, 53.00% 62.15%, 54.00% 58.93%, 55.00% 55.15%, 56.00% 51.05%, 57.00% 46.88%, 58.00% 42.90%, 59.00% 39.38%, 60.00% 36.52%, 61.00% 34.50%, 62.00% 33.46%, 63.00% 33.46%, 64.00% 34.50%, 65.00% 36.52%, 66.00% 39.38%, 67.00% 42.90%, 68.00% 46.88%, 69.00% 51.05%, 70.00% 55.15%, 71.00% 58.93%, 72.00% 62.15%, 73.00% 64.61%, 74.00% 66.14%, 75.00% 66.67%, 76.00% 66.14%, 77.00% 64.61%, 78.00% 62.15%, 79.00% 58.93%, 80.00% 55.15%, 81.00% 51.05%, 82.00% 46.88%, 83.00% 42.90%, 84.00% 39.38%, 85.00% 36.52%, 86.00% 34.50%, 87.00% 33.46%, 88.00% 33.46%, 89.00% 34.50%, 90.00% 36.52%, 91.00% 39.38%, 92.00% 42.90%, 93.00% 46.88%, 94.00% 51.05%, 95.00% 55.15%, 96.00% 58.93%, 97.00% 62.15%, 98.00% 64.61%, 99.00% 66.14%, 100.00% 66.67%);
     width: 100%;
@@ -276,16 +279,23 @@ h2 {
     background-color: #f8fafe;
     z-index: 0;
     top: 100%;
+    rotate: 180deg;
 }
 
-header .wave {
+.faq {
+    position: relative;
+}
+
+header .wave, .pricing .wave, .faq .wave, .parallax .wave {
+    animation: wave-continuos 2s infinite linear;
+    rotate: 180deg;
     position: absolute;
     clip-path: polygon(100% 0%, 0% 0%, 0.00% 66.67%, 1.00% 66.14%, 2.00% 64.61%, 3.00% 62.15%, 4.00% 58.93%, 5.00% 55.15%, 6.00% 51.05%, 7.00% 46.88%, 8.00% 42.90%, 9.00% 39.38%, 10.00% 36.52%, 11.00% 34.50%, 12.00% 33.46%, 13.00% 33.46%, 14.00% 34.50%, 15.00% 36.52%, 16.00% 39.38%, 17.00% 42.90%, 18.00% 46.88%, 19.00% 51.05%, 20.00% 55.15%, 21.00% 58.93%, 22.00% 62.15%, 23.00% 64.61%, 24.00% 66.14%, 25.00% 66.67%, 26.00% 66.14%, 27.00% 64.61%, 28.00% 62.15%, 29.00% 58.93%, 30.00% 55.15%, 31.00% 51.05%, 32.00% 46.88%, 33.00% 42.90%, 34.00% 39.38%, 35.00% 36.52%, 36.00% 34.50%, 37.00% 33.46%, 38.00% 33.46%, 39.00% 34.50%, 40.00% 36.52%, 41.00% 39.38%, 42.00% 42.90%, 43.00% 46.88%, 44.00% 51.05%, 45.00% 55.15%, 46.00% 58.93%, 47.00% 62.15%, 48.00% 64.61%, 49.00% 66.14%, 50.00% 66.67%, 51.00% 66.14%, 52.00% 64.61%, 53.00% 62.15%, 54.00% 58.93%, 55.00% 55.15%, 56.00% 51.05%, 57.00% 46.88%, 58.00% 42.90%, 59.00% 39.38%, 60.00% 36.52%, 61.00% 34.50%, 62.00% 33.46%, 63.00% 33.46%, 64.00% 34.50%, 65.00% 36.52%, 66.00% 39.38%, 67.00% 42.90%, 68.00% 46.88%, 69.00% 51.05%, 70.00% 55.15%, 71.00% 58.93%, 72.00% 62.15%, 73.00% 64.61%, 74.00% 66.14%, 75.00% 66.67%, 76.00% 66.14%, 77.00% 64.61%, 78.00% 62.15%, 79.00% 58.93%, 80.00% 55.15%, 81.00% 51.05%, 82.00% 46.88%, 83.00% 42.90%, 84.00% 39.38%, 85.00% 36.52%, 86.00% 34.50%, 87.00% 33.46%, 88.00% 33.46%, 89.00% 34.50%, 90.00% 36.52%, 91.00% 39.38%, 92.00% 42.90%, 93.00% 46.88%, 94.00% 51.05%, 95.00% 55.15%, 96.00% 58.93%, 97.00% 62.15%, 98.00% 64.61%, 99.00% 66.14%, 100.00% 66.67%);
     width: 100%;
-    height: 40px;
+    height: 80px;
     background-color: white;
     z-index: 1;
-    top: 90%;
+    top: 100%;
 }
 
 .techniques .wave-white {
@@ -452,7 +462,7 @@ h4 {
 }
 
 .events {
-    padding: 20px 0 20px 0;
+    padding: 50px 0 20px 0;
     position: relative;
     background: #f8fafe;
 
@@ -478,9 +488,12 @@ h4 {
     background-color: #f8fafe;
     z-index: 0;
     top: -100px;
+    animation: wave-continuos 2s infinite linear;
 }
 
 .events .wave-b {
+    animation: wave-continuos 2s infinite linear;
+    rotate: 180deg;
     position: absolute;
     clip-path: polygon(100% 0%, 0% 0%, 0.00% 66.67%, 1.00% 66.14%, 2.00% 64.61%, 3.00% 62.15%, 4.00% 58.93%, 5.00% 55.15%, 6.00% 51.05%, 7.00% 46.88%, 8.00% 42.90%, 9.00% 39.38%, 10.00% 36.52%, 11.00% 34.50%, 12.00% 33.46%, 13.00% 33.46%, 14.00% 34.50%, 15.00% 36.52%, 16.00% 39.38%, 17.00% 42.90%, 18.00% 46.88%, 19.00% 51.05%, 20.00% 55.15%, 21.00% 58.93%, 22.00% 62.15%, 23.00% 64.61%, 24.00% 66.14%, 25.00% 66.67%, 26.00% 66.14%, 27.00% 64.61%, 28.00% 62.15%, 29.00% 58.93%, 30.00% 55.15%, 31.00% 51.05%, 32.00% 46.88%, 33.00% 42.90%, 34.00% 39.38%, 35.00% 36.52%, 36.00% 34.50%, 37.00% 33.46%, 38.00% 33.46%, 39.00% 34.50%, 40.00% 36.52%, 41.00% 39.38%, 42.00% 42.90%, 43.00% 46.88%, 44.00% 51.05%, 45.00% 55.15%, 46.00% 58.93%, 47.00% 62.15%, 48.00% 64.61%, 49.00% 66.14%, 50.00% 66.67%, 51.00% 66.14%, 52.00% 64.61%, 53.00% 62.15%, 54.00% 58.93%, 55.00% 55.15%, 56.00% 51.05%, 57.00% 46.88%, 58.00% 42.90%, 59.00% 39.38%, 60.00% 36.52%, 61.00% 34.50%, 62.00% 33.46%, 63.00% 33.46%, 64.00% 34.50%, 65.00% 36.52%, 66.00% 39.38%, 67.00% 42.90%, 68.00% 46.88%, 69.00% 51.05%, 70.00% 55.15%, 71.00% 58.93%, 72.00% 62.15%, 73.00% 64.61%, 74.00% 66.14%, 75.00% 66.67%, 76.00% 66.14%, 77.00% 64.61%, 78.00% 62.15%, 79.00% 58.93%, 80.00% 55.15%, 81.00% 51.05%, 82.00% 46.88%, 83.00% 42.90%, 84.00% 39.38%, 85.00% 36.52%, 86.00% 34.50%, 87.00% 33.46%, 88.00% 33.46%, 89.00% 34.50%, 90.00% 36.52%, 91.00% 39.38%, 92.00% 42.90%, 93.00% 46.88%, 94.00% 51.05%, 95.00% 55.15%, 96.00% 58.93%, 97.00% 62.15%, 98.00% 64.61%, 99.00% 66.14%, 100.00% 66.67%);
     width: 100%;
@@ -561,6 +574,8 @@ h4 {
     padding: 20px;
     justify-content: space-around;
     gap: 25px;
+    flex-wrap: wrap;
+
 }
 
 .price {
@@ -635,7 +650,7 @@ h4 {
     margin: revert;
 }
 
-.pricing .description {
+.pricing .description, .faq .description {
     margin-bottom: 45px;
     text-align: center;
 }
@@ -659,7 +674,6 @@ h4 {
 
 .additional {
     margin-top: 30px;
-    margin-bottom: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -668,7 +682,7 @@ h4 {
 
 /* Estilos para el modal */
 
-.modal-back{
+.modal-back {
     position: fixed;
     top: 0;
     left: 0;
@@ -708,9 +722,11 @@ h4 {
     margin-bottom: 20px;
     text-align: center;
 }
+
 .info-modal form {
     width: 100%;
 }
+
 .info-modal form label {
     display: block;
     font-weight: bold;
@@ -758,25 +774,235 @@ h4 {
     right: 10px;
     font-size: 18px;
 }
+
 .info-modal .space {
-    margin-top: 10px ;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .info-modal .drop {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
+
 .info-modal .drop label {
     margin: 0;
 }
+
 .info-modal button {
     padding: 10px 20px;
     width: 50%;
 }
+
 .info-modal img {
     margin-top: 20px;
+}
+
+/*slides*/
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: visible;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.callbacks_nav {
+    transition: all 500ms;
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    top: 50%;
+    left: 2%;
+    opacity: 1;
+    z-index: 300;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url(assets/images/flechas.png) no-repeat left top;
+    margin-top: -45px;
+}
+
+.callbacks_nav.next {
+    transition: all 500ms;
+    left: auto;
+    z-index: 30;
+    background-position: right top;
+    right: 2%;
+}
+
+.barra {
+    display: none;
+}
+
+#subir {
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+    position: fixed;
+    z-index: 101;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--principal);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+    .hero .text {
+        padding-left: 60px;
+    }
+}
+
+.border {
+    padding: 20px;
+    background: white;
+    border: var(--principal) 2px solid;
+    border-radius: 15px;
+}
+
+.acordeon {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 15px;
+}
+
+.acordeon-disparador {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acordeon-disparador i {
+    font-size: 24px;
+    transition: 500ms all;
+    color: var(--principal);
+}
+
+.color {
+    color: var(--principal);
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.informacion {
+    padding-top: 20px;
+    display: none;
+    margin: auto;
+}
+
+.acordeon ul li {
+    margin-left: 20px
+}
+
+.acordeon h4 {
+    transition: 300ms all;
+    margin: 0;
+}
+
+.video-container {
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid var(--principal);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.faq {
+    padding: 50px 0;
+    background: #f8fafe;
+}
+
+.faq h3 {
+    text-align: center;
+}
+
+.pricing {
+    padding-top: 50px;
+    position: relative;
+    padding-bottom: 35px;
+}
+
+footer {
+    background: #0f1b28;
+    padding: 50px 0;
+    color: white;
+}
+footer .content {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    max-width: 300px;
+}
+footer .keep {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+footer .info {
+    display: flex;
+    gap: 10px;
+}
+.faq .wave  {
+    background-color: #f8fafe !important;
+}
+.parallax .wave {
+    top: -1px;
+}
+.parallax .wave.invert {
+    top: unset;
+    bottom: -1px;
+    rotate: 0deg;
+}
+.parallax {
+    position: relative;
+    height: 600px;
+    background-image: url(assets/images/fixed.jpeg);
+    background-attachment: fixed; /* El truco para el efecto parallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
