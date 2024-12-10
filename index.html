@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/705d8d055f.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
+    <link href="carrousel.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <title>WildCarp</title>
+</head>
+<body>
+<div class="modal-back" id="modal" style="display: none">
+    <div class="info-modal">
+        <a href="#" id="closeModal">✖</a>
+        <h2>Contact Us</h2>
+        <p>If you have any questions concerning our services, please fill out the contact form below.</p>
+        <form action="/submit">
+            <label for="name">Name *</label>
+            <input id="name" name="name" required type="text">
+
+            <label for="email">E-mail *</label>
+            <input id="email" name="email" required type="email">
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <div class="space">
+                <div class="drop">
+                    <label for="dropdown">Choose an option:</label>
+                    <select id="dropdown">
+                        <option value="opcion1">Basic Plan</option>
+                        <option value="opcion2">Standard Plan</option>
+                        <option value="opcion3">Premium Plan</option>
+                    </select>
+                </div>
+                <button class="modal-boton" style="border: none" type="submit">Submit</button>
+            </div>
+
+        </form>
+        <img src="assets/images/logo.png" alt="logo">
+
+    </div>
+
+</div>
+
+<section class="top">
+    <div class="container middle">
+        <div class="information">
+            <div class="info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>yourmail@gmail.com</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-phone"></i>
+                <p>+88130-589-745-6987</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-stopwatch"></i>
+                <p>Mon - Fri 09:00 - 18:00</p>
+            </div>
+        </div>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-vimeo-v"></i></a>
+        </div>
+    </div>
+</section>
+<header>
+    <div class="wave"></div>
+    <div class="container middle">
+        <a href="#"><img alt="logo" src="assets/images/logo.png"></a>
+        <div class="botones">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="adicionales">
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="hero">
+    <div class="wave"></div>
+    <div class="container middle">
+        <div class="text">
+            <h1>Modern Design <span>Exotic</span> Fishinizerry</h1>
+            <p>Conveniently customize proactives into everaged interfaces without compellingly streamline
+                cooperative.</p>
+            <a href="#">Join us Now</a>
+        </div>
+        <div class="imagen">
+            <figure>
+                <img alt="hero" src="assets/images/hero.png">
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="categories" style="padding: 110px 0">
+    <div class="content middle">
+        <article>
+            <figure>
+                <img alt="categories" src="assets/images/categories-1.jpg">
+                <div class="text">
+                    <h2>Fishing Reels</h2>
+                    <p>Continually aggregate friction web interfaces thout</p>
+                </div>
+            </figure>
+        </article>
+
+        <article>
+            <figure>
+                <img alt="categories" src="assets/images/categories-2.jpg">
+                <div class="text">
+                    <h2>Fishing Reels</h2>
+                    <p>Continually aggregate friction web interfaces thout</p>
+                </div>
+            </figure>
+        </article>
+        <article>
+            <figure>
+                <img alt="categories" src="assets/images/categories-3.jpg">
+                <div class="text">
+                    <h2>Fishing Reels</h2>
+                    <p>Continually aggregate friction web interfaces thout</p>
+                </div>
+            </figure>
+        </article>
+        <article>
+            <figure>
+                <img alt="categories" src="assets/images/categories-4.jpg">
+                <div class="text">
+                    <h2>Fishing Reels</h2>
+                    <p>Continually aggregate friction web interfaces thout</p>
+                </div>
+            </figure>
+        </article>
+    </div>
+</section>
+
+<section class="techniques">
+    <div class="image"></div>
+    <div class="content middle">
+        <div class="info">
+            <div class="text">
+                <h3>Fishing Techniques are Methods For Catching fish.</h3>
+                <p>Conveniently customize proactive web services for leveraged without globally wellies richard.</p>
+            </div>
+
+            <div class="images">
+                <article>
+                    <figure class="wow animate__animated animate__fadeInDown">
+                        <img alt="Technique" src="assets/images/small/01.png">
+                    </figure>
+                    <h4>Fishing Training</h4>
+                    <p>Continually aggregate frictionle interc without globally wellies richard.</p>
+                </article>
+                <article>
+                    <figure class="wow animate__animated animate__fadeInDown">
+                        <img alt="Technique" src="assets/images/small/02.png">
+                    </figure>
+                    <h4>Equipment Support</h4>
+                    <p>Continually aggregate frictionle interc without globally wellies richard.</p></article>
+                <article>
+                    <figure class="wow animate__animated animate__fadeInDown">
+                        <img alt="Technique" src="assets/images/small/03.png">
+                    </figure>
+                    <h4>25+ Fishing Lake</h4>
+                    <p>Continually aggregate frictionle interc without globally wellies richard.</p></article>
+                <article>
+                    <figure class="wow animate__animated animate__fadeInDown">
+                        <img alt="Technique" src="assets/images/small/04.png">
+                    </figure>
+                    <h4>Fishing Boat Rental</h4>
+                    <p>Continually aggregate frictionle interc without globally wellies richard.</p></article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="events">
+    <div class="wave invert"></div>
+    <div class="content middle">
+        <div class="title">
+            <div class="description">
+                <h3>Fishing Hunt Event</h3>
+                <p>Continually productize compelling quality for packed with Elated Setting up to website and creating
+                    pages.</p>
+            </div>
+            <div class="slide-buttons">
+                <a href="#" id="back-button"><i class="wow animate__animated animate__heartBeat fa-solid fa-arrow-left"></i></a>
+                <a href="#" id="forward-button"><i class="wow animate__animated animate__heartBeat fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div id="carousel">
+            <div id="slide-container">
+                <div class="slide" data-slideindex="1">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/01.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-slideindex="2">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/02.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-slideindex="3">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/03.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-slideindex="4">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/04.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-slideindex="1">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/01.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-slideindex="2">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/02.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-slideindex="3">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/03.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide" data-slideindex="4">
+                    <figure>
+                        <img alt="event" src="assets/images/carousel/04.jpg">
+                    </figure>
+                    <div class="text">
+                        <div class="decor"></div>
+                        <h4>Billfish Tournament</h4>
+                        <div class="text-icon">
+                            <i class="fa-regular fa-clock"></i>
+                            <p> 09:00 am 22 Nov 2021</p>
+                        </div>
+                        <div class="text-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> Melborn city, Australia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wave-b"></div>
+</section>
+
+<section class="photos">
+    <div class="content">
+        <div class="description">
+            <h3>Wildcarp Fishing Hunt Gallery</h3>
+            <p>Conveniently customize proactive services leveraged interfaces without Globally</p>
+        </div>
+        <div class="main-photos">
+            <div class="col">
+                <a href="assets/images/photo-gallery/1.jpg" data-fancybox="gallery" class="div1 wow animate__animated animate__headShake">
+                    <figure>
+                        <img src="assets/images/photo-gallery/1.jpg" alt="photo">
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="assets/images/photo-gallery/2.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                    <figure>
+                        <img src="assets/images/photo-gallery/2.jpg" alt="photo">
+                    </figure>
+                </a>
+                <a href="assets/images/photo-gallery/3.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                    <figure>
+                        <img src="assets/images/photo-gallery/3.jpg" alt="photo">
+                    </figure>
+                </a>
+                <a href="assets/images/photo-gallery/4.jpg" data-fancybox="gallery" class="full wow animate__animated animate__headShake">
+                    <figure>
+                        <img src="assets/images/photo-gallery/4.jpg" alt="photo">
+                    </figure>
+                </a>
+            </div>
+            <div class="col">
+                <a href="assets/images/photo-gallery/5.jpg" data-fancybox="gallery" class="full wow animate__animated animate__headShake">
+                    <figure>
+                        <img src="assets/images/photo-gallery/5.jpg" alt="photo">
+                    </figure>
+                </a>
+                <a href="assets/images/photo-gallery/6.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                    <figure>
+                        <img src="assets/images/photo-gallery/6.jpg" alt="photo">
+                    </figure>
+                </a>
+                <a href="assets/images/photo-gallery/7.jpg" data-fancybox="gallery" class="half wow animate__animated animate__headShake">
+                    <figure>
+                        <img src="assets/images/photo-gallery/7.jpg" alt="photo">
+                    </figure>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="pricing">
+    <div class="content middle">
+        <div class="description">
+            <h3>Wildcarp Pricing Plan</h3>
+            <p>Conveniently customize proactive services leveraged interfaces without Globally</p>
+        </div>
+
+        <div class="container ">
+            <article class="price">
+                <h2>Basic Plan</h2>
+                <div class="line"></div>
+                <div class="cost">
+                    <p class="number">29</p>
+                    <p class="dollar">$</p>
+                    <p class="text">Per Month</p>
+                </div>
+                <div class="line"></div>
+                <div class="caracteristicas">
+                    <p>Wordpress Theme</p>
+                    <p>Free Theme Installation</p>
+                    <p>Free 24/7 Support</p>
+                </div>
+                <a href="#" class="boton">PURCHASE NOW</a>
+            </article>
+
+            <article class="price wow animate__animated animate__headShake">
+                <h2>Standard Plan</h2>
+                <div class="line"></div>
+                <div class="cost">
+                    <p class="number">39</p>
+                    <p class="dollar">$</p>
+                    <p class="text">Per Month</p>
+                </div>
+                <div class="line"></div>
+                <div class="caracteristicas">
+                    <p>Wordpress Theme</p>
+                    <p>Free Theme Installation</p>
+                    <p>Free 24/7 Support</p>
+                    <p>Free Custom Services</p>
+                </div>
+                <a href="#" class="boton">PURCHASE NOW</a>
+            </article>
+
+            <article class="price">
+                <h2>Premium Plan</h2>
+                <div class="line"></div>
+                <div class="cost">
+                    <p class="number">49</p>
+                    <p class="dollar">$</p>
+                    <p class="text">Per Month</p>
+                </div>
+                <div class="line"></div>
+                <div class="caracteristicas">
+                    <p>Wordpress Theme</p>
+                    <p>Free Theme Installation</p>
+                    <p>Free 24/7 Support</p>
+                </div>
+                <a href="#" class="boton">PURCHASE NOW</a>
+            </article>
+        </div>
+        <div class="additional">
+            <a href="#" id="ver-mas" class="wow animate__animated animate__fadeInLeft modal-boton">Contact Us Now</a>
+        </div>
+    </div>
+</section>
+
+<script src="carrousel.js"></script>
+<script>
+    // Cerrar el modal al hacer clic fuera del contenido
+    $(window).click(function (event) {
+        if ($(event.target).is('#modal')) {
+            $('#modal').fadeOut();
+
+        }
+    });
+    document.addEventListener("keydown", function (event) {
+        if (event.key === 'Escape') {
+            $('#modal').fadeOut();
+        }
+    })
+    $(".rslides").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+    });
+    $('#closeModal').click(function () {
+        $('#modal').fadeOut();
+    });
+    $('#ver-mas').click(function () {
+        $('#modal').fadeIn();
+    });
+    document.querySelectorAll('a[href="#"]').forEach(function (link) {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+        });
+    });
+    new WOW().init();
+    Fancybox.bind("[data-fancybox]", {});
+</script>
+
+</body>
+</html>
